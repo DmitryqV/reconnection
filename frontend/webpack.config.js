@@ -4,8 +4,7 @@ const path = require("path");
 require('dotenv').config();
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: process.env.PORT,
+  entry: "./src/index.tsx",
   devServer: {
     historyApiFallback: true,
     open: true,
@@ -29,13 +28,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
+        loader: require.resolve("ts-loader"),
         exclude: /node_modules/,
-        loader: require.resolve("babel-loader"),
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test:/\.s?css$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.png|svg|jpg|gif$/,

@@ -1,0 +1,28 @@
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASS}
+    ports:
+      - ${MONGO_PORT}:27017
+    # fixme: chown failed
+    # volumes:
+    #   - ./docker/mongo-data:/data/db
+    command: --wiredTigerCacheSizeGB 1.5
+    networks:
+      - reconnection-network
+  backend:
+    depends_on:
+      - mongo
+    image: reconnection-backend
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile.backend
+    ports:
+      - ${BACKEND_PORT}:3000
+    networks:
+      - reconnection-network
+networks:
+  reconnection-network:

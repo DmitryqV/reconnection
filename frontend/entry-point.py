@@ -12,22 +12,10 @@ install__node__modules = "yarn install"
 
 
 if argv[1] == "build":
-  os.system(f"""
-    {install__node__modules} &&
-    {launch__linter} &&
-    {launch__build}
-  """);
+  os.system(f"{install__node__modules} && {launch__linter} && {launch__build}");
 
 if argv[1] == "start":
-  os.system(f"""
-    {install__node__modules} &&
-    {launch__prettier}&&
-    {launch__linter} &&
-    {launch__project}
-  """);
+  os.system(f"{install__node__modules} && {launch__prettier}&& {launch__linter} && {launch__project}");
 
 if argv[1] == "lint":
-  os.system(f"""
-    {launch__prettier} &&
-    {launch__linter}
-  """)
+  os.system(f"{launch__prettier} && {launch__linter}")

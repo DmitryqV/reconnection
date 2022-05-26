@@ -14,7 +14,7 @@ module.exports = {
     port: process.env.PORT || 3000,
   },
   output: {
-    filename: "bundle.[hash].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "../backend/src/static"),
   },
   plugins: [

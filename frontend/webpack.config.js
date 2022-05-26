@@ -4,13 +4,14 @@ const path = require("path");
 require("dotenv").config();
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.tsx",
   devServer: {
-    port: process.env.PORT || 8081,
     historyApiFallback: true,
     open: true,
     compress: true,
     hot: true,
+    port: process.env.PORT || 3000,
   },
   output: {
     filename: "bundle.[hash].js",

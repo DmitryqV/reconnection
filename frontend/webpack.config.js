@@ -24,6 +24,11 @@ module.exports = {
   ],
   resolve: {
     modules: [__dirname, "src", "node_modules", "public", "sockets"],
+    alias: {
+      "@views": "src/views/",
+      "@global": "src/global/",
+      "@src": "src/",
+    },
     extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
   },
   module: {

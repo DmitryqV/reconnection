@@ -1,3 +1,3 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const GroupPage = () => <>Group page</>;
+export const GroupPage: FC = () => <>Group page</>;

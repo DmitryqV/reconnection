@@ -1,3 +1,3 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const ProfilePage = () => <>Profile page</>;
+export const ProfilePage: FC = () => <>Profile page</>;

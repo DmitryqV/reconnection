@@ -7,6 +7,12 @@
     "jsx": "react",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@views/*": ["src/views/*"],
+      "@global/*": ["src/global/*"],
+      "@src/*": ["src/*"]
+    }
   }
 }

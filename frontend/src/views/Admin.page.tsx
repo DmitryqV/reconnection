@@ -1,3 +1,3 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const AdminPage = () => <>Admin page</>;
+export const AdminPage: FC = () => <>Admin page</>;

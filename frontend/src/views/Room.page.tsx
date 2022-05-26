@@ -1,3 +1,3 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const RoomPage = () => <>Room page</>;
+export const RoomPage: FC = () => <>Room page</>;

@@ -4,8 +4,8 @@ from sys import argv
 # fro git submodules
 # install__sub__modules = "git submodule update --init --recursive --remote"
 
-launch__build          = "webpack --config webpack.config.js --mode=production"
-launch__project        = "webpack serve  --hot --open --mode=development"
+launch__build          = "webpack --mode=production"
+launch__project        = "webpack serve --mode=development"
 launch__prettier       = "yarn prettier --write ."
 launch__linter         = "yarn eslint '**/*.{ts,tsx}'"
 install__node__modules = "yarn install"

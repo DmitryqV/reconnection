@@ -6,11 +6,11 @@ require("dotenv").config();
 module.exports = {
   entry: "./src/index.tsx",
   devServer: {
+    port: process.env.PORT || 8081,
     historyApiFallback: true,
     open: true,
     compress: true,
     hot: true,
-    port: process.env.PORT || 8080,
   },
   output: {
     filename: "bundle.[hash].js",
@@ -42,5 +42,4 @@ module.exports = {
       },
     ],
   },
-  mode: "development",
 };

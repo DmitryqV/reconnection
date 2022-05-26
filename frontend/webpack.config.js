@@ -19,11 +19,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/public/index.html",
+      template: "./public/index.html",
     }),
   ],
   resolve: {
-    modules: [__dirname, "src", "node_modules"],
+    modules: [__dirname, "src", "node_modules", "public"],
     extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
   },
   module: {

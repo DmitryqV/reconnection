@@ -3,6 +3,7 @@ from sys import argv
 
 install__node__modules   = "yarn install"
 __name__                 = "entry-point.py"
+__option__               = argv[1]
+__mode__                 = argv[2]  
 
-if argv[1]:
-  os.system(f"{install__node__modules} && cd ./{argv[1]} && python {__name__} {argv[1]}:{argv[2]}");
+os.system(f"{install__node__modules} && cd ./{__option__} && python {__mode__} {__option__}:{__mode__}");

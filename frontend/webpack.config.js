@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 const path = require("path");
 
@@ -17,9 +17,7 @@ module.exports = {
   },
   optimization: {
     minimize: true,
-    minimizer: [
-      new TerserPlugin({ extractComments: false })
-    ],
+    minimizer: [new TerserPlugin({ extractComments: false })],
   },
   output: {
     filename: "bundle.js",

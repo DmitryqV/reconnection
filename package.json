@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "backend": "python entry-point.py backend start",
-    "backend:build": "python entry-point.py backend build",
-    "frontend": "python entry-point.py frontend start",
+    "backend": "python entrypoint.py backend start",
+    "backend:build": "python entrypoint.py backend build",
+    "frontend": "python entrypoint.py frontend start",
     "frontend:build": "python entry-point.py frontend build"
   },
   "dependencies": {

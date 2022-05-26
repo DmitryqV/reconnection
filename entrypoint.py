@@ -2,7 +2,7 @@ import os
 from sys import argv
 
 install__node__modules   = "yarn install"
-__name__                 = "entry-point.py"
+__name__                 = "entrypoint.py"
 __option__               = argv[1]
 __mode__                 = argv[2]  
 

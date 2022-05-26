@@ -3,3 +3,6 @@
 /backend/dist/
 node_modules/
 backend/src/static/
+
+.idea/
+.vscode/

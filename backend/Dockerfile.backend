@@ -1,0 +1,11 @@
+FROM node:18
+
+WORKDIR /app
+
+COPY package*.json ./
+# remove installation big node_modules in container
+RUN yarn install
+
+COPY . .
+
+CMD ["yarn","start"]

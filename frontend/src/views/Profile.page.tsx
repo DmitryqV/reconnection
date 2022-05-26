@@ -1,5 +1,3 @@
-import React from 'react';
+import React from "react";
 
-export const ProfilePage = () => (
-  <>Profile page</>
-);
+export const ProfilePage = () => <>Profile page</>;

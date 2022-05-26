@@ -1,6 +1,4 @@
-import React from 'react';
-import {FC} from 'react';
+import React from "react";
+import { FC } from "react";
 
-export const LoginPage: FC = () => (
-  <>Login page</>
-);
+export const LoginPage: FC = () => <>Login page</>;

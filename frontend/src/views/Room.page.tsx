@@ -1,5 +1,3 @@
-import React from 'react';
+import React from "react";
 
-export const RoomPage = () => (
-  <>Room page</>
-);
+export const RoomPage = () => <>Room page</>;

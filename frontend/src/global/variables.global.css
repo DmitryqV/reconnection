@@ -3,16 +3,16 @@
     main background color
   */
   --main-bc: #444444;
-    
-  /* 
-    main second element color
-  */
-  --main-sec: #5E5E5E;
 
   /* 
     main second element color
   */
-  --main-sec: #5E5E5E;
+  --main-sec: #5e5e5e;
+
+  /* 
+    main second element color
+  */
+  --main-sec: #5e5e5e;
 
   /* 
     main input/output color
@@ -28,11 +28,11 @@
     main svg size w/h
   */
   --main-svgs: 24px;
-  
+
   /* 
     main small elements background color
   */
-  --main-sebc: #9A9A9A;
+  --main-sebc: #9a9a9a;
 
   /* 
     mail title/header color
@@ -47,5 +47,5 @@
   /* 
     room active option color
   */
-  --room-nav-active: #FF6A49;
+  --room-nav-active: #ff6a49;
 }

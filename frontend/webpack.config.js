@@ -23,7 +23,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    modules: [__dirname, "src", "node_modules", "public"],
+    modules: [__dirname, "src", "node_modules", "public", "sockets"],
     extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
   },
   module: {

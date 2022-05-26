@@ -10,7 +10,7 @@ module.exports = {
     open: true,
     compress: true,
     hot: true,
-    port: process.env.PORT || 88,
+    port: process.env.PORT || 8080,
   },
   output: {
     filename: "bundle.[hash].js",

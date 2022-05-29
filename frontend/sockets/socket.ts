@@ -15,18 +15,18 @@ type BanList = string[];
 
 interface PropertiesNSP {
   // root user properties
-  _autoConnection?: AutoConnection;
-  _rootTransfer?: RootTransfer;
-  _whitelist?: WhiteList;
+  _autoConnection: AutoConnection;
+  _rootTransfer: RootTransfer;
+  _whitelist: WhiteList;
   _banlist: BanList;
 
   // user properties
-  inviteLink?: InviteLink;
-  creatorID?: CreatorID;
+  inviteLink: InviteLink;
+  creatorID: CreatorID;
 }
 
 interface CustomNSP {
-  properties?: PropertiesNSP;
+  properties: PropertiesNSP;
   socket: Socket;
 }
 

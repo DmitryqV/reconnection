@@ -42,7 +42,7 @@ export const manager: Manager = new Manager(
     forceNew: true,
     timeout: 1000,
     upgrade: true,
-    path: "/ws/",
+    path: "/w/",
   }
 );
 

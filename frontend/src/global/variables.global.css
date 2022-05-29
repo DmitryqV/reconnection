@@ -1,40 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Mono&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu Mono", monospa;
+}
+
 :root {
-  /* 
+  /*
     main background color
   */
   --main-bc: #444444;
 
-  /* 
+  /*
     main second element color
   */
   --main-sec: #5e5e5e;
 
-  /* 
+  /*
     main second element color
   */
   --main-sec: #5e5e5e;
 
-  /* 
+  /*
     main input/output color
   */
   --main-io: rgba(75, 75, 75, 0.5);
 
-  /* 
+  /*
     main primary content background color
   */
   --main-primaryc: #505050;
 
-  /* 
+  /*
     main svg size w/h
   */
   --main-svgs: 24px;
 
-  /* 
+  /*
     main small elements background color
   */
   --main-sebc: #9a9a9a;
 
-  /* 
+  /*
     mail title/header color
   */
   --main-thc: rgba(255, 255, 255, 0.6);
@@ -44,7 +51,7 @@
   */
   --room-nav-bc: rgba(68, 68, 68, 0.8);
 
-  /* 
+  /*
     room active option color
   */
   --room-nav-active: #ff6a49;

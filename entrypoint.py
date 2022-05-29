@@ -1,5 +1,5 @@
-import os
 from sys import argv
+import os
 
 install__node__modules   = "yarn install"
 __name__                 = "entrypoint.py"

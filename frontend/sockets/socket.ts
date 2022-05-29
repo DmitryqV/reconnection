@@ -52,7 +52,6 @@ export const manager: Manager = new Manager(
  **/
 export const AdminNSP = (AdminID: AdminID, token: Token): Socket => {
   return manager.socket("/admin/" + AdminID, { auth: { token } });
-
 };
 
 /**

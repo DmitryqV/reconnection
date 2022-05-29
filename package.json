@@ -4,6 +4,7 @@
     "backend:build": "python entrypoint.py backend build",
     "frontend": "python entrypoint.py frontend start",
     "frontend:build": "python entrypoint.py frontend build",
+    "production": "python production.py",
     "commit": "python commit.py"
   },
   "dependencies": {

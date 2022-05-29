@@ -44,5 +44,5 @@ yarn commit
 
 connect via ssh from the vm.list
 ```sh
-yarn commit
+yarn ssh
 ```

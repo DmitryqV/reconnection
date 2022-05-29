@@ -1,10 +1,10 @@
 from sys import argv
 import os
 
-launch__build__frontend  = "webpack --mode=production"
-launch__frontend         = "webpack serve"
-launch__prettier         = "yarn prettier --write ."
 launch__linter           = "yarn eslint '**/*.{ts,tsx}'"
+launch__build__frontend  = "webpack --mode=production"
+launch__prettier         = "yarn prettier --write ."
+launch__frontend         = "webpack serve"
 
 if argv[1] == "frontend:start":
   os.system(f"{launch__prettier} && {launch__linter} && {launch__frontend}");

@@ -1,8 +1,8 @@
 from sys import argv
 import os
 
-install__node__modules   = "yarn install"
 __name__                 = "entrypoint.py"
+install__node__modules   = "yarn install"
 __option__               = argv[1]
 __mode__                 = argv[2]  
 

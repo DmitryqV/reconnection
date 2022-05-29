@@ -1,8 +1,6 @@
 package performance
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	fmt.Println("Hello performance")

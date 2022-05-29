@@ -23,3 +23,11 @@ development
 ```sh
 yarn backend
 ```
+
+## WASM Compiler
+
+development
+
+```sh
+yarn compiler
+```

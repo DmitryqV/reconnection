@@ -3,7 +3,8 @@
     "backend": "python entrypoint.py backend start",
     "backend:build": "python entrypoint.py backend build",
     "frontend": "python entrypoint.py frontend start",
-    "frontend:build": "python entrypoint.py frontend build"
+    "frontend:build": "python entrypoint.py frontend build",
+    "commit": "python commit.py"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",

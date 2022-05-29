@@ -1,6 +1,8 @@
 import os
 import re
 
+os.system("clear")
+
 __VM__LIST__ = open('vm.list', 'r')
 __LIST__     = []
 

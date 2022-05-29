@@ -5,7 +5,8 @@
     "frontend": "python entrypoint.py frontend start",
     "frontend:build": "python entrypoint.py frontend build",
     "production": "python production.py",
-    "commit": "python commit.py"
+    "commit": "python commit.py",
+    "ssh": "python ssh.py"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",

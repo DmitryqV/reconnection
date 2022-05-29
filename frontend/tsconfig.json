@@ -10,6 +10,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
+      "@sockets/*": ["sockets/*"],
       "@views/*": ["src/views/*"],
       "@global/*": ["src/global/*"],
       "@src/*": ["src/*"]

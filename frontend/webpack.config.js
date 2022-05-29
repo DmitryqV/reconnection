@@ -31,6 +31,7 @@ module.exports = {
   resolve: {
     modules: [__dirname, "src", "node_modules", "public", "sockets"],
     alias: {
+      "@sockets": "sockets/",
       "@views": "src/views/",
       "@global": "src/global/",
       "@src": "src/",

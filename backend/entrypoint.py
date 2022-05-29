@@ -1,8 +1,8 @@
 from sys import argv
 import os
 
-launch__build__backend   = "nest build"
 launch__backend          = "nest start --watch"
+launch__build__backend   = "nest build"
 
 if argv[1] == "backend:start":
   os.system(f"{launch__backend}");

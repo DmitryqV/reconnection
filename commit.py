@@ -11,7 +11,7 @@ os.system("clear")
 
 __frontend__ = input("Start frontend ? y/n")
 
-while (__frontend__ != "y" | __frontend__ != "n"):
+while (__frontend__ != "y" & __frontend__ != "n"):
   if __frontend__ == "y": 
     os.system("yarn frontend")
     os._exit(0)

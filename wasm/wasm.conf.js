@@ -6,7 +6,7 @@ const go = new Go();
 /**
  * Connected to Go Lang
  **/
-WebAssembly.instantiateStreaming(fetch("main.module.wasm"), go.importObject)
+WebAssembly.instantiateStreaming(fetch("wasm/main.go.wasm"), go.importObject)
   .then((self) => go.run(self.instance));
 
 /** 

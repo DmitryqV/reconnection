@@ -1,5 +1,7 @@
 import os
 
+os.system("clear")
+
 __message__ = ""
 
 while len(__message__) == 0:

@@ -1,6 +1,6 @@
 import os
 
-os.system("yarn frontend:build && yarn backend:build && clear")
+os.system("yarn frontend:build && yarn backend:build")
 
 print(""" 
                      _            _   _             

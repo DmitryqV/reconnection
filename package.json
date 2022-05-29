@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "backend": "python entrypoint.py backend start",
+    "frontend:build": "python entrypoint.py frontend build",
     "backend:build": "python entrypoint.py backend build",
     "frontend": "python entrypoint.py frontend start",
-    "frontend:build": "python entrypoint.py frontend build",
+    "backend": "python entrypoint.py backend start",
     "production": "python production.py",
     "compiler": "python compiler.py",
     "commit": "python commit.py",

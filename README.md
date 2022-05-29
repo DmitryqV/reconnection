@@ -8,7 +8,9 @@ production
 yarn production
 ```
 
-## Frontend
+## Development
+
+### Frontend
 
 development
 
@@ -22,7 +24,7 @@ production
 yarn frontend:build
 ```
 
-## Backend
+### Backend
 
 development
 
@@ -36,7 +38,9 @@ production
 yarn backend:build
 ```
 
-## WASM Compiler
+## Sub scripts
+
+### WASM Compiler
 
 development
 
@@ -44,7 +48,7 @@ development
 yarn compiler
 ```
 
-## Commit
+### Commit
 
 commit and push changes 
 
@@ -52,7 +56,7 @@ commit and push changes
 yarn commit
 ```
 
-## SSH
+### SSH
 
 connect via ssh from the vm.list
 ```sh

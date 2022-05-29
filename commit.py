@@ -8,4 +8,3 @@ while len(__message__) == 0:
 
 os.system(f"git add . && git commit -a -m'{getpass.getuser()}: {__message__}' && git push")
 os.system("clear")
-os.system("exit")

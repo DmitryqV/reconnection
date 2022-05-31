@@ -1,14 +1,14 @@
 {
   "scripts": {
-    "frontend:build": "python entrypoint.py frontend build",
-    "backend:build": "python entrypoint.py backend build",
-    "frontend": "python entrypoint.py frontend start",
-    "backend": "python entrypoint.py backend start",
-    "desktop": "python entrypoint.py desktop start",
-    "production": "python production.py",
-    "compiler": "python compiler.py",
-    "commit": "python commit.py",
-    "ssh": "python ssh.py"
+    "frontend:build": "python3 entrypoint.py frontend build",
+    "backend:build": "python3 entrypoint.py backend build",
+    "frontend": "python3 entrypoint.py frontend start",
+    "backend": "python3 entrypoint.py backend start",
+    "desktop": "python3 entrypoint.py desktop start",
+    "production": "python3 production.py",
+    "compiler": "python3 compiler.py",
+    "commit": "python3 commit.py",
+    "ssh": "python3 ssh.py"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",

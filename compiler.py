@@ -17,4 +17,3 @@ for root, dirs, files in os.walk("./wasm/"):
 for file in __GO_FILES__:
   __local__   = file.split('/')
   subprocess.Popen(f"cd ./wasm && GOOS=js GOARCH=wasm go build -o ./wasm_modules/{__local__[len(__local__) - 1]}.wasm", stdout=subprocess.PIPE, shell=True)
-

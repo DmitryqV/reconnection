@@ -19,7 +19,6 @@ const createWindow = () => {
    **/
   win.loadFile("index.html");
 
-
   /**
    * Development extensions
    **/
@@ -30,7 +29,6 @@ const createWindow = () => {
     win.webContents.openDevTools();
   }
 };
-
 
 /**
  *  Closed app event

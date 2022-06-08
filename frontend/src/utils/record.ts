@@ -36,12 +36,25 @@ class Util {
     Util.records = [];
   }
 
-  public async startRecord(video: boolean | IVideoConfig, audio: boolean, callBack: ICallBack, catchCallBack: ICallBack, finallyCallBack: ICallBack): Promise<IRecord> {
+  public async startRecord(
+    video: boolean | IVideoConfig,
+    audio: boolean,
+    callBack: ICallBack,
+    catchCallBack: ICallBack,
+    finallyCallBack: ICallBack
+  ): Promise<IRecord>
+  {
 
     const record: MediaStream = await navigator.mediaDevices.getUserMedia({ audio, video })
-      .then((stream: MediaStream) => callBack(stream))
-      .catch((error: Error) => catchCallBack(error))
-      .finally(() => finallyCallBack());
+      .then(
+        (stream: MediaStream) => callBack(stream)
+      )
+      .catch(
+        (error: Error) => catchCallBack(error)
+      )
+      .finally(
+        () => finallyCallBack()
+      );
 
     const payload: IRecord = { record, id: Util.records.length - 1 };
 

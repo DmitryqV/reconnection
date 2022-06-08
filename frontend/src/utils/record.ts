@@ -4,11 +4,24 @@ declare interface ICallBack extends Function {
   finallyCallBack: () => any;
 }
 
-declare type records = record[];
+declare type records = IRecord[];
 
-declare interface record {
+declare interface IRecord {
   record: MediaStream;
   id: number;
+}
+
+declare interface IVideoConfig {
+  width?: {
+    max?: number,
+    min?: number,
+    ideal?: number
+  };
+  height?: {
+    max?: number,
+    min?: number,
+    ideal?: number
+  };
 }
 
 declare type instance = Util;
@@ -23,16 +36,16 @@ class Util {
     Util.records = [];
   }
 
-  public async startRecord(video: boolean, audio: boolean, callBack: ICallBack, catchCallBack: ICallBack, finallyCallBack: ICallBack): Promise<record> {
+  public async startRecord(video: boolean | IVideoConfig, audio: boolean, callBack: ICallBack, catchCallBack: ICallBack, finallyCallBack: ICallBack): Promise<IRecord> {
 
-    const record: MediaStream = await  navigator.mediaDevices.getUserMedia({ audio, video })
+    const record: MediaStream = await navigator.mediaDevices.getUserMedia({ audio, video })
       .then((stream: MediaStream) => callBack(stream))
       .catch((error: Error) => catchCallBack(error))
       .finally(() => finallyCallBack());
 
-    const payload: record = { record, id: Util.records.length - 1 };
+    const payload: IRecord = { record, id: Util.records.length - 1 };
 
     return Util.records.push(payload) && payload;
   }
-  public offRecord() {}
+  public offRecord() { }
 }

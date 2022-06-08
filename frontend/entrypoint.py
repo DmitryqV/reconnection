@@ -1,7 +1,7 @@
 from sys import argv
 import os
 
-launch__linter           = "yarn eslint '**/*.{ts,tsx}'"
+launch__linter           = "yarn eslint"
 launch__build__frontend  = "webpack --mode=production"
 launch__prettier         = "yarn prettier --write ."
 launch__frontend         = "webpack serve"

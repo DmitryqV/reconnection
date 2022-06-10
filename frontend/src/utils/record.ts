@@ -13,14 +13,14 @@ declare interface IRecord {
 
 declare interface IVideoConfig {
   width?: {
-    max?: number,
-    min?: number,
-    ideal?: number
+    max?: number;
+    min?: number;
+    ideal?: number;
   };
   height?: {
-    max?: number,
-    min?: number,
-    ideal?: number
+    max?: number;
+    min?: number;
+    ideal?: number;
   };
 }
 
@@ -42,23 +42,16 @@ class Util {
     callBack: ICallBack,
     catchCallBack: ICallBack,
     finallyCallBack: ICallBack
-  ): Promise<IRecord>
-  {
-
-    const record: MediaStream = await navigator.mediaDevices.getUserMedia({ audio, video })
-      .then(
-        (stream: MediaStream) => callBack(stream)
-      )
-      .catch(
-        (error: Error) => catchCallBack(error)
-      )
-      .finally(
-        () => finallyCallBack()
-      );
+  ): Promise<IRecord> {
+    const record: MediaStream = await navigator.mediaDevices
+      .getUserMedia({ audio, video })
+      .then((stream: MediaStream) => callBack(stream))
+      .catch((error: Error) => catchCallBack(error))
+      .finally(() => finallyCallBack());
 
     const payload: IRecord = { record, id: Util.records.length - 1 };
 
     return Util.records.push(payload) && payload;
   }
-  public offRecord() { }
+  public offRecord() {}
 }

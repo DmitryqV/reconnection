@@ -1,7 +1,13 @@
 import os
 import re
+import platform
 
-os.system("clear")
+if platform.system() == "Windows":
+  os.system("cls")
+else:
+  os.system("clear")
+
+
 
 __VM__LIST__ = open('vm.list', 'r')
 __LIST__     = []

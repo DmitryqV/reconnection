@@ -1,7 +1,12 @@
 import subprocess
+import platform
 import os
 
-os.system("clear")
+if platform.system() == "Windows":
+  os.system("cls")
+else:
+  os.system("clear")
+
 
 __GO_LANG__  = os.system("go env GOROOT")
 __GO_FILES__ = []

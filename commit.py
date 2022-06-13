@@ -1,6 +1,10 @@
 import os
+import platform
 
-os.system("clear")
+if platform.system() == "Windows":
+  os.system("cls")
+else:
+  os.system("clear")
 
 __message__ = ""
 
@@ -9,4 +13,9 @@ while len(__message__) == 0:
 
 os.system(f"git add . && git commit -m'{__message__}' && git push")
 
-os.system("clear")
+if platform.system() == "Windows":
+  os.system("cls")
+else:
+  os.system("clear")
+
+

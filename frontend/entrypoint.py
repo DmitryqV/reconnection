@@ -7,7 +7,7 @@ launch__prettier         = "yarn prettier --write ."
 launch__frontend         = "webpack serve"
 
 if argv[1] == "frontend:start":
-  os.system(f"{launch__prettier} && {launch__linter} && {launch__frontend}");
+  os.system(f"{launch__prettier} && {launch__linter} && {launch__frontend}")
 
 if argv[1] == "frontend:build":
-  os.system(f"{launch__build__frontend}");
+  os.system(f"{launch__build__frontend}")

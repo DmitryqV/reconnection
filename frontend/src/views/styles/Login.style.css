@@ -25,7 +25,7 @@
 }
 
 .login__input {
-  color: #fff;
+  color: #212121;
   border: none;
   outline: none;
   width: 260px;
@@ -38,7 +38,6 @@
   cursor: pointer;
   background-color: #414141;
   color: #fff;
-  font-weight: bold;
   font-size: 18px;
   width: 260px;
   height: 40px;

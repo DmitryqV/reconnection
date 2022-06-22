@@ -1,9 +1,13 @@
 import React, { FC } from "react";
 
-export const NavbarComponent:FC = () => (
+export const NavbarComponent: FC = () => (
   <div className="main__navbar">
     <div className="main__navbar__search">
-      <input type="text" className="main__navbar__search-input" placeholder="Поиск по интересам" />
+      <input
+        type="text"
+        className="main__navbar__search-input"
+        placeholder="Поиск по интересам"
+      />
     </div>
     <ul className="main__navbar__bookmarks">
       <li className="main__navbar__badge">#GO</li>

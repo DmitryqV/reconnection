@@ -18,12 +18,12 @@ import "@sockets/socket";
 export const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<LoginPage/>} />
-      <Route path="/a" element={<AdminPage/>} />
-      <Route path="/r" element={<RoomPage/>} />
-      <Route path="/g" element={<GroupPage/>} />
-      <Route path="/u" element={<ProfilePage/>} />
-      <Route path="/m" element={<MainPage/>} />
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/a" element={<AdminPage />} />
+      <Route path="/r" element={<RoomPage />} />
+      <Route path="/g" element={<GroupPage />} />
+      <Route path="/u" element={<ProfilePage />} />
+      <Route path="/m" element={<MainPage />} />
     </Routes>
   </BrowserRouter>
 );

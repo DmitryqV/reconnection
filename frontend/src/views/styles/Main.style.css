@@ -1,6 +1,78 @@
+.main__navbar__profile {
+  width: 100%;
+  height: 54px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__navbar__profile__content {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.main__navbar__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: 54px;
+  gap: 20px;
+}
+
+.main__navbar__list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  list-style-type: none;
+}
+
+.main__navbar__list__item__nick {
+  font-size: 18px;
+  text-transform: lowercase;
+  color: #c5c5c5;
+}
+
+.main__navbar__list__item__pick {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.main__navbar__exit {
+  position: absolute;
+  background-color: #fff;
+  color: #505050;
+  outline: none;
+  border: none;
+  right: 0;
+  top: 11px;
+  width: 100px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main__navbar__exit:hover {
+  color: #fff;
+  background-color: #505050;
+}
+
 .main__section {
   display: flex;
-  min-width: 1280px;
+  width: 1280px;
   height: 100vh;
   background-color: #fff;
   flex-direction: column;
@@ -26,7 +98,7 @@
   outline: none;
   padding: 5px;
   padding-left: 23px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border-radius: 5px;
   font-size: 22px;
   font-style: normal;
@@ -36,7 +108,7 @@
 }
 
 .main__navbar__search-input::placeholder {
-  color: #C5C5C5;
+  color: #c5c5c5;
 }
 
 .main__navbar__bookmarks {
@@ -58,12 +130,11 @@
   min-height: calc(32px - 14px);
   font-weight: 700;
   font-size: 14px;
-  background: #EAEAEA;
+  background: #eaeaea;
   border-radius: 5px;
-  color: #A0A0A0;
+  color: #a0a0a0;
   list-style-type: none;
   padding: 5px;
-  transition: background-color .4s, color .4s;
   text-transform: uppercase;
 }
 
@@ -97,6 +168,11 @@
   width: 300px;
   height: 150px;
   list-style-type: none;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 4px;
+}
+
+.main__channel:hover {
+  cursor: pointer;
+  background-color: #212121;
 }

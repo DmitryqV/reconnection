@@ -260,3 +260,9 @@
   text-align: center;
   padding: 5px;
 }
+
+.channel__isruble {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}

@@ -1,5 +1,5 @@
 import React, { FC, ChangeEvent } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams,URLSearchParamsInit } from "react-router-dom";
 
 export const NavbarComponent: FC = () => {
   const [search, setSeatch] = useSearchParams();
@@ -8,20 +8,25 @@ export const NavbarComponent: FC = () => {
     <div className="main__navbar">
       <div className="main__navbar__search">
         <input
-          onInput={(e: ChangeEvent<HTMLInputElement>) =>
-            setSeatch({
-              origin: "main",
-              mode: process.env.NODE_ENV,
-              source: "stream",
-              socket: "false",
-              c: "auth",
-              u: "developer",
-              q: e.target.value,
-              alert: "true",
-              reddirect: "true",
-              reddirectTo: "streams",
-              code: "utf-8",
-            })
+          onInput={(e: ChangeEvent<HTMLInputElement>): void =>
+            {
+              const query: URLSearchParamsInit = {
+                origin: "main",
+                mode: process.env.NODE_ENV,
+                source: "stream",
+                socket: "false",
+                c: "auth",
+                u: "developer",
+                q: e.target.value,
+                alert: "true",
+                reddirect: "true",
+                reddirectTo: "streams",
+                code: "utf-8",
+              };
+
+              setSeatch(query);
+
+            }
           }
           value={search.get("q")}
           type="text"

@@ -1,8 +1,17 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Post } from '@nestjs/common';
-import { ChannelsService } from './channels.service';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpCode,
+  HttpStatus,
+  Param,
+  Post,
+} from "@nestjs/common";
+import { ChannelsService } from "./channels.service";
 import { createChannelDTO } from "./dto/channels.dto";
 
-@Controller('channels')
+@Controller("channels")
 export class ChannelsController {
   constructor(private readonly ChannelsService: ChannelsService) {}
 

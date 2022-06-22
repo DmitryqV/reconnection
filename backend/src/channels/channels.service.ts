@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 import { createChannelDTO } from "./dto/channels.dto";
 
 @Injectable()

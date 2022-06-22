@@ -15,7 +15,7 @@ import { MainPage } from "@views/Main.page";
  **/
 import "@sockets/socket";
 
-export const App:FC = () => (
+export const App: FC = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<LoginPage />} />

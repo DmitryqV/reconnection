@@ -1,0 +1,28 @@
+.main__section {
+  display: flex;
+  justify-content: center;
+  min-width: 1280px;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.main__navbar {
+
+}
+
+.main__navbar__search {
+
+}
+
+.main__navbar__search-input {
+
+}
+
+.main__navbar__bookmarks {
+
+}
+
+.main__navbar__badge {
+
+}
+

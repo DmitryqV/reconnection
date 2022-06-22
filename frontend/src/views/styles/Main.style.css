@@ -46,6 +46,10 @@
   color: #c5c5c5;
 }
 
+.main__navbar__list__item:hover .main__navbar__list__item__nick {
+  color: #212121;
+}
+
 .main__navbar__list__item__pick {
   width: 44px;
   height: 44px;

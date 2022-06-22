@@ -20,7 +20,7 @@ export const NavbarComponent: FC = () => {
               alert: "true",
               reddirect: "true",
               reddirectTo: "streams",
-              utf: "true",
+              code: "utf-8",
             })
           }
           value={search.get("q")}

@@ -49,16 +49,6 @@ export const ChannelComponent: FC<iChannel> = ({ title }) => (
           tags: ["go", "js"],
         }}
       />
-      <ChannelCardComponent
-        {...{
-          title: "hello",
-          rating: 3.3,
-          price: 20,
-          peoples: 20,
-          limitPeoples: 53,
-          tags: ["go", "hello javascript"],
-        }}
-      />
     </ul>
   </section>
 );

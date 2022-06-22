@@ -41,8 +41,8 @@ export const ChannelCardComponent: FC<IChannel> = ({
     </div>
     <div className="channel__title">{title}</div>
     <ul className="channel__tags">
-      {tags.map((tag: string) => (
-        <li className="channel__tag">#{tag}</li>
+      {tags.map((tag: string, index: number) => (
+        <li className="channel__tag" key={index + "tag" + rating + title}>#{tag}</li>
       ))}
     </ul>
   </li>

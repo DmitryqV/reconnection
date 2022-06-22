@@ -5,4 +5,5 @@ export class createChannelDTO {
   readonly current: number
   readonly admins: string[]
   readonly banlist: string[]
+  readonly whitelist: string[]
 }

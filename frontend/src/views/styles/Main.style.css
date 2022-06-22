@@ -63,6 +63,11 @@
   color: #A0A0A0;
   list-style-type: none;
   padding: 5px;
+  transition: background-color .4s, color .4s;
   text-transform: uppercase;
 }
 
+.main__navbar__badge:hover {
+  background-color: var(--main-primaryc);
+  color: #fff;
+}

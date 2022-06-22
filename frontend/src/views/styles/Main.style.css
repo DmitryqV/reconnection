@@ -50,6 +50,7 @@
 }
 
 .main__navbar__badge {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

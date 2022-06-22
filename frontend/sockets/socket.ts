@@ -31,7 +31,7 @@ interface CustomNSP {
 }
 
 export const manager: Manager = new Manager(
-  process.env.NODE_ENV === "production" ? "/" : "http://localhost:3000",
+  process.env.NODE_ENV === "production" ? "/" : "http://localhost:2000",
   {
     closeOnBeforeunload: true,
     transports: ["websocket"],

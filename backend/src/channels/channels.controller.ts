@@ -26,16 +26,4 @@ export class ChannelsController {
   createChannel(@Body() body: createChannelDTO): createChannelDTO {
     return this.ChannelsService.createChannel(body);
   }
-
-  @Get()
-  @HttpCode(HttpStatus.FOUND)
-  getAllChannels(): string[] {
-    return this.ChannelsService.getAllChannels();
-  }
-
-  @Get(":id")
-  @HttpCode(HttpStatus.FOUND)
-  getChannelById(@Param("id") id: string): string {
-    return this.ChannelsService.getChannelById(id);
-  }
 }

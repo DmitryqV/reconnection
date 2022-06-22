@@ -10,11 +10,4 @@ export class ChannelsService {
   createChannel(body: createChannelDTO): createChannelDTO {
     return body;
   }
-
-  getAllChannels() {
-    return [];
-  }
-  getChannelById(id: string): string {
-    return id;
-  }
 }

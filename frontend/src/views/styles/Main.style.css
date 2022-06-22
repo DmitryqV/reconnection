@@ -156,11 +156,11 @@
 
 .main__channels__content {
   padding: 0;
-  width: 100%;
+  max-width: 1280px;
   min-height: 150px;
+  overflow: none;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 26px;
 }
 

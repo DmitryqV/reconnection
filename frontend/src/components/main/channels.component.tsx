@@ -11,7 +11,8 @@ export const ChannelComponent: FC<iChannel> = ({ title }) => (
     <ul className="main__channels__content">
       <ChannelCardComponent
         {...{
-          title: "hello",
+          author: "JAVASCRIPT",
+          title: "javascript - hello world",
           rating: 3.3,
           price: 199,
           peoples: 20,
@@ -21,6 +22,7 @@ export const ChannelComponent: FC<iChannel> = ({ title }) => (
       />
       <ChannelCardComponent
         {...{
+          author: "WORLDEDIT",
           title: "hello",
           rating: 4.3,
           price: 20,
@@ -31,6 +33,7 @@ export const ChannelComponent: FC<iChannel> = ({ title }) => (
       />
       <ChannelCardComponent
         {...{
+          author: "simplyfy",
           title: "hello",
           rating: 4.7,
           price: 50,
@@ -41,6 +44,7 @@ export const ChannelComponent: FC<iChannel> = ({ title }) => (
       />
       <ChannelCardComponent
         {...{
+          author: "NEST",
           title: "hello",
           rating: 5.0,
           price: 20,

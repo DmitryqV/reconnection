@@ -271,3 +271,9 @@
   top: -100px;
   right: 0;
 }
+
+.main__channel__link {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}

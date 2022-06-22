@@ -25,7 +25,7 @@ export const ChannelCardComponent: FC<IChannel> = ({
   peoples,
   limitPeoples,
 }) => (
-  <Link to="/r/4444132">
+  <Link to="/r/4444132" className="main__channel__link">
     <li className="main__channel">
       <img className="channel__preview" src={bg} />
       <div className="channel__stats">

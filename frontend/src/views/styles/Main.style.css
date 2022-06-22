@@ -161,7 +161,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 40px;
+  gap: 26px;
 }
 
 .main__channel {

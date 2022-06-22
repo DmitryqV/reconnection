@@ -13,7 +13,7 @@ export const ChannelComponent: FC<iChannel> = ({ title }) => (
         {...{
           title: "hello",
           rating: 3.3,
-          price: 20,
+          price: 199,
           peoples: 20,
           limitPeoples: 53,
           tags: ["dell", "js", "svg"],

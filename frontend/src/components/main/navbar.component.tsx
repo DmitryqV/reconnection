@@ -8,7 +8,21 @@ export const NavbarComponent: FC = () => {
     <div className="main__navbar">
       <div className="main__navbar__search">
         <input
-          onInput={(e: ChangeEvent<HTMLInputElement>) => setSeatch({auth: "developer", u: "developer", q: e.target.value, s: "development", socket: "socketID__development"})}
+          onInput={(e: ChangeEvent<HTMLInputElement>) =>
+            setSeatch({
+              origin: "main",
+              mode: process.env.NODE_ENV,
+              source: "stream",
+              socket: "false",
+              c: "auth",
+              u: "developer",
+              q: e.target.value,
+              alert: "true",
+              reddirect: "true",
+              reddirectTo: "streams",
+              utf: "true",
+            })
+          }
           value={search.get("q")}
           type="text"
           className="main__navbar__search-input"
@@ -25,5 +39,5 @@ export const NavbarComponent: FC = () => {
         <li className="main__navbar__badge">#мемы</li>
       </ul>
     </div>
-  )
+  );
 };

@@ -20,10 +20,11 @@ export const App: FC = () => (
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="/a" element={<AdminPage />} />
-      <Route path="/r" element={<RoomPage />} />
+      <Route path="/r/:id" element={<RoomPage />} />
       <Route path="/g" element={<GroupPage />} />
       <Route path="/u" element={<ProfilePage />} />
       <Route path="/m" element={<MainPage />} />
+      <Route path="*" element={<h1> not found </h1>} />
     </Routes>
   </BrowserRouter>
 );

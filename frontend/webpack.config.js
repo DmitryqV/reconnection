@@ -21,6 +21,7 @@ module.exports = {
   },
   output: {
     filename: "bundle.js",
+    publicPath: "/",
     path: path.resolve(__dirname, "../backend/src/static"),
   },
   plugins: [

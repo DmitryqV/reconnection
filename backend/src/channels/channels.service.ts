@@ -3,11 +3,11 @@ import { createChannelDTO } from "./dto/channels.dto";
 
 @Injectable()
 export class ChannelsService {
-  deleteChannel(id: string) {
-    return id;
+  async deleteChannel(id: string): Promise<string> {
+    return await id;
   }
 
-  createChannel(body: createChannelDTO): createChannelDTO {
-    return body;
+  async createChannel(body: createChannelDTO): Promise<createChannelDTO> {
+    return await body;
   }
 }

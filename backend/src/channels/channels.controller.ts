@@ -16,13 +16,13 @@ export class ChannelsController {
 
   @Delete(":id")
   @HttpCode(HttpStatus.NO_CONTENT)
-  deleteChannel(@Param("id") id: string): string {
-    return this.ChannelsService.deleteChannel(id);
+  async deleteChannel(@Param("id") id: string): Promise<string> {
+    return await this.ChannelsService.deleteChannel(id);
   }
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  createChannel(@Body() body: createChannelDTO): createChannelDTO {
-    return this.ChannelsService.createChannel(body);
+  async createChannel(@Body() body: createChannelDTO): Promise<createChannelDTO> {
+    return await this.ChannelsService.createChannel(body);
   }
 }

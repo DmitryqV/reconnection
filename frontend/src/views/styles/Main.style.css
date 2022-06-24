@@ -1,7 +1,7 @@
 .main__navbar__profile {
   z-index: 2;
   width: 100%;
-  height: 54px;
+  height: 60px;
   position: fixed;
   left: 0;
   top: 0;
@@ -28,11 +28,13 @@
   padding: 0;
   margin: 0;
   width: 300px;
-  height: 54px;
+  height: 60px;
   gap: 20px;
 }
 
 .main__navbar__list__item {
+  padding: 5px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,9 +47,12 @@
   text-transform: lowercase;
   color: #c5c5c5;
 }
+.main__navbar__list__item:hover {
+  background-color: #505050;
+}
 
 .main__navbar__list__item:hover .main__navbar__list__item__nick {
-  color: #212121;
+  color: #fff;
 }
 
 .main__navbar__list__item__pick {

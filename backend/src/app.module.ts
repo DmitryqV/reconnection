@@ -6,10 +6,7 @@ import { AppService } from "./app.service";
 import { ChannelsModule } from "./channels/channels.module";
 
 @Module({
-  imports: [
-    ChannelsModule,
-    MongooseModule.forRoot("")
-  ],
+  imports: [ChannelsModule, MongooseModule.forRoot("")],
   controllers: [AppController],
   providers: [AppService],
 })

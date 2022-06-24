@@ -22,7 +22,9 @@ export class ChannelsController {
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  async createChannel(@Body() body: createChannelDTO): Promise<createChannelDTO> {
+  async createChannel(
+    @Body() body: createChannelDTO
+  ): Promise<createChannelDTO> {
     return await this.ChannelsService.createChannel(body);
   }
 }

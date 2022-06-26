@@ -1,0 +1,42 @@
+.room__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.room__section__wrapper {
+  padding: 10px;
+  margin-top: 50px;
+  width: calc(1280px - 20px);
+  align-content: center;
+  height: 700px;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  background-color: #9a9a9a;
+  gap: 20px;
+  row-gap: 20px;
+}
+
+.room__user {
+  list-style-type: none;
+  width: 25%;
+  height: 250px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.room__section__chat {
+  margin-top: 50px;
+  width: 350px;
+  height: 720px;
+  background-color: #5e5e5e;
+  overflow-y: scroll;
+}

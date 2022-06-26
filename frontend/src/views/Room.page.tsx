@@ -65,9 +65,7 @@ export const RoomPage: FC = () => {
             <img src={user} />
           </div>
         </li>
-        <section className="room__controller">
-
-        </section>
+        <section className="room__controller"></section>
       </ul>
       <section className="room__metadata">
         <h3 className="room__title">JAVASCRIPT - Hello world</h3>
@@ -80,14 +78,14 @@ export const RoomPage: FC = () => {
           remaining essentially unchanged.
         </div>
         <div className="room__tags">
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
-        <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
+          <span className="room__tag">JAVASCRIPT</span>
         </div>
       </section>
       <ul className="room__section__chat">

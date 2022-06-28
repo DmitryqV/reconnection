@@ -6,10 +6,6 @@
   height: 100vh;
 }
 
-.room__section__wrapper::-webkit-scrollbar {
-  display: none;
-}
-
 .room__section__wrapper {
   position: relative;
   display: grid;
@@ -20,10 +16,7 @@
   border-radius: 4px;
   padding-right: 20px;
   grid-area: 1 / 1 / 5 / 5;
-
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .room__user {

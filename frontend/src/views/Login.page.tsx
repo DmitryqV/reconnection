@@ -9,16 +9,8 @@ export const LoginPage: FC = () => {
     password: null,
   });
 
-  const validateLogin = (): boolean => {
-    return regexp.test(state.login);
-  };
-
-  const validatePassword = (): boolean => {
-    return regexp.test(state.password)
-  };
-
   const validation = () => {
-    [validateLogin(), validatePassword()].every((el: boolean) => el === true) && (window.location.href = "/m");
+    [regexp.test(state.login), regexp.test(state.password)].every((el: boolean) => el === true) && (window.location.href = "/m");
   };
 
   return (

@@ -2,7 +2,10 @@ import React, { FC, useState, ChangeEvent } from "react";
 import "./styles/Login.style.css";
 
 export const LoginPage: FC = () => {
-  const regexp = process.env.NODE_ENV === "production" ? /^([a-z0-9]{10,})$/ : /^([a-z0-9]{1,})$/;
+  const regexp =
+    process.env.NODE_ENV === "production"
+      ? /^([a-z0-9]{10,})$/
+      : /^([a-z0-9]{1,})$/;
 
   const [state, setState] = useState({
     login: null,
@@ -10,7 +13,9 @@ export const LoginPage: FC = () => {
   });
 
   const validation = () => {
-    [regexp.test(state.login), regexp.test(state.password)].every((el: boolean) => el === true) && (window.location.href = "/m");
+    [regexp.test(state.login), regexp.test(state.password)].every(
+      (el: boolean) => el === true
+    ) && (window.location.href = "/m");
   };
 
   return (

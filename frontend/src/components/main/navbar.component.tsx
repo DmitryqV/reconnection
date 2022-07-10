@@ -1,5 +1,6 @@
 import React, { FC, ChangeEvent } from "react";
 import { useSearchParams, URLSearchParamsInit } from "react-router-dom";
+import { QueryComponent } from "./query.component";
 
 export const NavbarComponent: FC = () => {
   const [search, setSeatch] = useSearchParams();
@@ -32,69 +33,64 @@ export const NavbarComponent: FC = () => {
         />
       </div>
       <ul className="main__navbar__bookmarks">
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = "GO";
-            setSeatch(query);
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "JAVASCRIPT";
+              setSeatch(query);
+            },
+            query: "JAVASCRIPT",
           }}
-        >
-          #GO
-        </li>
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = "JAVASCRIPT";
-            setSeatch(query);
+        />
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "JAVASCRIPT";
+              setSeatch(query);
+            },
+            query: "JAVASCRIPT",
           }}
-        >
-          #JAVASCRIPT
-        </li>
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = "БИЗНЕС";
-            setSeatch(query);
+        />
+
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "JAVASCRIPT";
+              setSeatch(query);
+            },
+            query: "JAVASCRIPT",
           }}
-        >
-          #БИЗНЕС
-        </li>
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = "Программирование";
-            setSeatch(query);
+        />
+
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "JAVASCRIPT";
+              setSeatch(query);
+            },
+            query: "JAVASCRIPT",
           }}
-        >
-          #Программирование
-        </li>
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = ".NET";
-            setSeatch(query);
+        />
+
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "JAVASCRIPT";
+              setSeatch(query);
+            },
+            query: "JAVASCRIPT",
           }}
-        >
-          #.NET
-        </li>
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = "твиты";
-            setSeatch(query);
+        />
+
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "JAVASCRIPT";
+              setSeatch(query);
+            },
+            query: "JAVASCRIPT",
           }}
-        >
-          #твиты
-        </li>
-        <li
-          className="main__navbar__badge"
-          onClick={() => {
-            query.q = "мемы";
-            setSeatch(query);
-          }}
-        >
-          #мемы
-        </li>
+        />
       </ul>
     </div>
   );

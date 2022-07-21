@@ -36,49 +36,49 @@ export const NavbarComponent: FC = () => {
         <QueryComponent
           {...{
             callback: () => {
-              query.q = "JAVASCRIPT";
+              query.q = "1";
               setSeatch(query);
             },
-            query: "JAVASCRIPT",
+            query: "1",
           }}
         />
         <QueryComponent
           {...{
             callback: () => {
-              query.q = "JAVASCRIPT";
+              query.q = "2";
               setSeatch(query);
             },
-            query: "JAVASCRIPT",
-          }}
-        />
-
-        <QueryComponent
-          {...{
-            callback: () => {
-              query.q = "JAVASCRIPT";
-              setSeatch(query);
-            },
-            query: "JAVASCRIPT",
+            query: "2",
           }}
         />
 
         <QueryComponent
           {...{
             callback: () => {
-              query.q = "JAVASCRIPT";
+              query.q = "3";
               setSeatch(query);
             },
-            query: "JAVASCRIPT",
+            query: "3",
           }}
         />
 
         <QueryComponent
           {...{
             callback: () => {
-              query.q = "JAVASCRIPT";
+              query.q = "4";
               setSeatch(query);
             },
-            query: "JAVASCRIPT",
+            query: "4",
+          }}
+        />
+
+        <QueryComponent
+          {...{
+            callback: () => {
+              query.q = "5";
+              setSeatch(query);
+            },
+            query: "5",
           }}
         />
 

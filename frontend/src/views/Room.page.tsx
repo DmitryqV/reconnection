@@ -6,7 +6,9 @@ export const RoomPage: FC = () => {
   return (
     <section className="room__section">
       <h2 className="room__title">Jaba Script Conference</h2>
-      <video className="room__owner"/>
+      <section className="room__owner">
+        <div className="room__meta"></div>
+      </section>
       <ul className="room__other">
         <li className="room__user">
           <img src={user} />
